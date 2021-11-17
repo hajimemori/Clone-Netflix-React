@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi realizado com fins de estudar e aprimorar minhas habilidades no framework React. Utilizei o site da plataforma de streaming Netflix e o vídeo do Bonieky Lacerda como base para construção do projeto. 
 
-## Available Scripts
+## Desenvolvimento do Projeto 
 
-In the project directory, you can run:
+O projeto foi iniciado com único arquivo chamado de Tmdb.js que seria responsável por qualquer tipo de consulta na API.
+Na sequencia foi criado os componentes react que irão cuidar da parte visual efetivamente 
 
-### `yarn start`
+### Componentes  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Header
+Este é o componente responsável pelo cabeçalho. Neste temos o efeito do fundo transparente para cabeçalho, mas apenas quando a página esta com a barra de rolagem no topo, caso contrário o fundo se torna preto para não atrapalhar a experiência do usuário durante a navegação do site.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## FeatureMovie
+Este é o componente principal que é visualizado assim que a página é carregada. Nele é exibido um baner destacando um filme ou uma série aleatória original netflix. É exibido diversas informações da série ou filme (como gêneros, temporadas, pontos de popularidade, ano de lançamento e descrição). No componente limitamos o tamanho da descrição do destaque pois em caso de descrições excessivamente grandes, acabava interferindo em outras partes do layout.
 
-### `yarn test`
+## Movie Row
+Este componente é responsavel por cada uma das listas de filmes exibida abaixo do destaque. Nela utilizamos uma tecnica de criar duas *div* e fazer uma "correr" por dentro da outra dando este efeito de carrossel que é utilizada no site da Netflix. Também foi criado as setas laterais e funções que iriam lidar com a movimentação da lista.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API
 
-### `yarn build`
+A API utilizada no projeto foi do site do TheMoviedb. Que possui uma ótima documentação e fornece diversas informações sobre diversos filmes. Foi utilizada tal API por ser completa, simples e sem custos adicionais.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Fontes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ * https://www.netflix.com/browse 
+ * https://www.youtube.com/watch?v=tBweoUiMsDg
+ * https://www.themoviedb.org/documentation/api
